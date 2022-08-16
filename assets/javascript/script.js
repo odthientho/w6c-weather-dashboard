@@ -144,7 +144,7 @@ function displayWeather(dailyWeather) {
 // fetch data from Geocoding API: convert city name to (lat,lon) to localstorage
 async function setNewCityToLocalStorage(cityName) {
     var location = { city: cityName };
-    var apiURL = "http://api.openweathermap.org/geo/1.0/direct?q="+cityName+"&limit=1&appid="+APIKey;
+    var apiURL = "https://api.openweathermap.org/geo/1.0/direct?q="+cityName+"&limit=1&appid="+APIKey;
     await fetch(apiURL)
         .then(function(response) {
             if (response.status == 200) return response.json();
