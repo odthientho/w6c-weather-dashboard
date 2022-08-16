@@ -1,0 +1,136 @@
+header {
+    background-image: linear-gradient(to right, rgb(0, 153, 255) , rgb(13, 18, 120));;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5em 0.5em;
+}
+
+body {
+    min-width: 1050px;
+}
+
+main {
+    justify-content: space-around;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flex-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+aside {
+    width: 20%;
+    float: left;
+    margin-top: 10px;
+}
+
+aside h1 {
+    margin: 5px 0;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+aside input {
+    margin: 5px 0;
+    font-size: 100%;
+    padding: 2px 5px;
+}
+
+aside button {
+    margin: 5px 0;
+    font-size: 120%;
+    color: white;
+    background-color: rgb(52, 143, 218);
+    border: none;
+    padding: 5px 0;
+    margin-bottom: 15px;
+}
+
+aside button:hover {
+    background-color: rgb(34, 97, 234);
+}
+
+#cityList {
+    border-top: 2px;
+    border-style: solid;
+    border-color: darkgrey;
+    padding-top: 10px;
+}
+
+.cityBtn {
+    width: 100%;
+    background-color: darkgrey;
+    border: 1px;
+    border-color: white;
+    border-style: solid;
+    padding: 5px;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.cityBtn:hover {
+    background-color: grey;
+}
+
+.right-column {
+    width: 70%;
+    margin-top: 10px;
+}
+
+#todayWeather {
+    line-height: 180%;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+
+    padding: 10px 0;
+    padding-left: 20px;
+}
+
+#todayWeather h1 {
+    margin: 5px 0;
+    font-size: 150%;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#todayWeather h1 img {
+    width: 30px;
+    background-color:rgb(174, 208, 230);
+}
+
+#forecastingWeather {
+    line-height: 130%;
+    padding: 10px 0;
+    padding-left: 20px;
+    justify-content: start;
+}
+
+#forecastingWeather .dailyblock {
+    background-color: rgb(28, 67, 104);
+    color: white;
+    padding: 10px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#forecastingWeather .dailyblock img {
+    width: 40px;
+}
+
+#forecastingWeather h1 {
+    margin: 5px 0;
+    font-size: 120%;
+    font-weight: bold;
+}
