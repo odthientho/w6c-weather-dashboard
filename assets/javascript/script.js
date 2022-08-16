@@ -83,7 +83,7 @@ function displayWeather(dailyWeather) {
     var uvispan = document.createElement("span");
 
     /* Displaying Current Weather */
-    weatherIcon.src = "http://openweathermap.org/img/wn/"+dailyWeather[0].weather+"@2x.png"
+    weatherIcon.src = "https://openweathermap.org/img/wn/"+dailyWeather[0].weather+"@2x.png"
     todayWeather.firstElementChild.appendChild(weatherIcon);
 
     tempLi.innerHTML = "Temp: " + dailyWeather[0].temp + "°F";
@@ -122,7 +122,7 @@ function displayWeather(dailyWeather) {
         var humidityLi = document.createElement("li");
         
         dateLi.innerHTML = moment().add(i,'days').format("M/D/YYYY");
-        weatherIcon.src = "http://openweathermap.org/img/wn/"+dailyWeather[i].weather+"@2x.png"
+        weatherIcon.src = "https://openweathermap.org/img/wn/"+dailyWeather[i].weather+"@2x.png"
         tempLi.innerHTML = "Temp: " + dailyWeather[i].temp + "°F";
         windLi.innerHTML = "Wind: " + dailyWeather[i].wind + "MPH";
         humidityLi.innerHTML = "Humidity: " + dailyWeather[i].humidity + "%";
